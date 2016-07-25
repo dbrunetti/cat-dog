@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<img src="https://pixabay.com/static/uploads/photo/2013/08/26/09/24/field-175959_960_720.jpg" alt="" id="background">
+	<div ng-app="catDog" ng-controller="animalController">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#/">Home</a></li>
+					<li><a href="#/cat">Cat</a></li>
+					<li><a href="#/dog">Dog</a></li>
+					<li><a href="#/otter">Otter</a></li>
+					<li><a href="#/squirrel">Squirrel</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<ng-view id="viewport"></ng-view>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-animate.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+</body>
+</html>
